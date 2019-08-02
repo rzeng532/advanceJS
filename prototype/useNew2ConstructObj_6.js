@@ -1,6 +1,7 @@
 /*
  * 方式 6
- * 使用 new 函数返回对象。new 会自动生成 this并自动返回对象。
+ * 使用 new 函数返回对象。new 会自动生成 this并自动返回对象。new means auto this.
+ * this pattern called : Pseudoclassical Instantiation, 伪类实例化。
  * 缺点：
  */
 

@@ -6,6 +6,11 @@
 
 const carMethods = {
     //？？ {} 内部用 run = function() {..} 为什么不可以？
+    //Answer: 内部函数写法如下，需要使用' : '
+    newFunc: function() {
+        //Just for test
+    },
+
     run(kmNUm) {
         this.power -= (kmNUm / this.oilWear);
         this.power = (this.power).toFixed(2);
@@ -19,18 +24,16 @@ const carMethods = {
         this.power += addPower;
         //console.log('Add oil for car ${this.name}, remain oil can run ' + this.power * this.addOil);
         console.log('Add oil for car ' + this.name + ', remain oil '+ this.power + ' can run ' + (this.power * this.oilWear).toFixed(2));
-    }
+    },
 }
 
 function Car(name, power, oilWear) {
     let car = {};
-
     car.name = name;
     car.power = power;
     car.oilWear = oilWear;
 
     car.run = carMethods.run;
-
     car.addOil = carMethods.addOil;
 
     return car;

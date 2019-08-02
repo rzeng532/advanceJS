@@ -34,14 +34,15 @@ class Car{
         console.log('Add oil for car ' + this.name + ', remain oil '+ this.power + ' can run ' + (this.power * this.oilWear).toFixed(2));
     };
 
+    //static只和class 一起
     static sortCarsByOilRemain(cars) {
         let sortedCars = cars.sort((car1, car2) => {
             return car1.power - car2.power;
         });
 
-        for(var i = 0; i < sortedCars.length; i++) {
-            console.log(sortedCars[i].name + ',' + sortedCars[i].power);
-        }
+        // for(var i = 0; i < sortedCars.length; i++) {
+        //     console.log(sortedCars[i].name + ',' + sortedCars[i].power);
+        // }
 
         return sortedCars[0].name;
     };

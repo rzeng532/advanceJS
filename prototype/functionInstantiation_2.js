@@ -1,3 +1,9 @@
+/*
+ * 方式 2
+ * 通过 function 返回一个 object，是之前一种方式的演进，可以重复创建。
+ * 缺点：每个函数都需要对函数开辟一段内存，会造成内存的浪费 & 对象变得臃肿。
+ */
+
 function Car(name, power, oilWear) {
     let car = {};
 

@@ -9,7 +9,6 @@ function newRun(kmNUm) {
 }
 
 const carMethods = {
-    //？？ {} 内部用 run = function() {..} 为什么不可以？
     run(kmNUm) {
         this.power -= (kmNUm / this.oilWear);
         this.power = (this.power).toFixed(2);
